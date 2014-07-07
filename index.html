@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button id="silly">Raak me aan</button>
+<button id="leegmaken">Leegmaken</button>
+
+<div id="resultaat"></div>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/silly.js"></script>
+
+<script>
+	$('#silly').click(function() {
+	SILLY.DoIt($('#resultaat'));
+	});
+	$('#leegmaken').click(function() {
+	$('#resultaat').html(' ');
+	});
+
+</script>
+</body>
+</html>
